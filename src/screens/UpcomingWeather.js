@@ -4,7 +4,6 @@ import {
   StyleSheet,
   Text,
   FlatList,
-  View,
   StatusBar,
   ImageBackground,
 } from 'react-native'
@@ -56,7 +55,7 @@ const UpcomingWeather = () => {
       max={item.main.temp_max}
     />
   )
-  const {container,image}=styles
+  const { container, image } = styles
   return (
     <SafeAreaView style={container}>
       <ImageBackground
@@ -78,10 +77,10 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: 'royalblue',
-    paddingTop: StatusBar.currentHeight || 0
+    paddingTop: StatusBar.currentHeight || 0,
   },
   image: {
     flex: 1,
-  }
+  },
 })
 export default UpcomingWeather
